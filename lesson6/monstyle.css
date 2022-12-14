@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600;1,300&family=Roboto&display=swap');
+/* BQSIC CSS RESET */
+html,
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;  
+}
+/* haeder styles */
+header.header-container{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: rgb(4, 64, 85);
+}
+header.header-container nav ul.navbar-container {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 3rem;
+}
+header.header-container nav ul.navbar-container li {
+    color: white;
+    list-style: none;
+    font-weight: 700;
+    padding: 1.3rem 0.9rem;
+    background-color: rgba(8, 7, 7, 0.867);
+}
+header.header-container nav ul.navbar-container li a.nav-links {
+   text-decoration: none;
+   /* ce qui se passe l'orsque la souris passe sur le text de la liste */
+}header.header-container nav ul.navbar-container li:hover {
+   background-color: blueviolet;
+   color: rgb(229, 237, 229);
+   transition: 3s ease;
+   cursor: pointer;
+}
+header.header-container div.welcome-text-container {
+    display: flex;
+    /* justify-content: center; */ /*cest commanté car il etait préalablement utilié*/
+    align-items: center; /* remplace justify-content car il permet de recenctrer l'élement*/
+    flex-direction: column;
+    position: relative;
+}
+header.header-container div.welcome-text-container h1.hi-text {
+   color: orange;
+}
+header.header-container div.welcome-text-container h2.name-text {
+    color: whitesmoke;
+    animation:hopIn 4s infinite ;
+}
+.text-large {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.tex-medium {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+@keyframes hopIn {
+    0%{
+        color: black;
+        top: -3rem;
+        left: -5rem;
+        font-size: 1.5rem;
+    }
+    25%{
+        color:green;
+        top: 2rem;
+        left: 5rem;
+        font-size: 2.5rem;
+    }
+    75%{
+        color: red;
+        top: 6rem;
+        left: 8rem;
+        font-size: 2rem;
+    }
+   
+
+    100%{
+        color: rgb(57, 16, 222);
+        top: 0rem;
+        left: 0rem;
+        font-size: 5.5;
+    }
+}
